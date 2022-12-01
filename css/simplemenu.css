@@ -1,0 +1,110 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent
+}
+
+.top-animate {
+    background: #fff !important;
+    top: 13px !important;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.mid-animate {
+    opacity: 0
+}
+
+.bottom-animate {
+    background: #fff !important;
+    top: 13px !important;
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg)
+}
+
+.top-menu {
+    top: 5px;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #f9a530
+}
+
+.mid-menu {
+    top: 13px;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #f9a530
+}
+
+.bottom-menu {
+    top: 21px;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #f9a530
+}
+
+.menui {
+    background: #000;
+    transition: .6s ease;
+    transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+    margin-top: 10px;
+    position: absolute
+}
+
+.icon {
+    z-index: 999999999;
+    position: absolute;
+    display: block;
+    padding: 9px;
+    height: 32px;
+    width: 32px;
+    margin: 0;
+    top: 31px;
+    right: 20px
+}
+
+.mobilenav {
+    font-family: inherit;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ed1c24;
+    opacity: .9;
+    overflow: auto
+}
+
+.mobilenav li {
+	list-style-type: none;
+	text-align: left;
+	border-top: 1px solid #fff;
+}
+
+.mobilenav li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    width: 100%;
+    text-transform: uppercase;
+	display: block;
+	padding: 10px;
+}
+.mobilenav.topnav {
+	padding-top: 80px;
+}
+.topnav ul{margin:0;padding:0;display:none;}
+
+.menui.top-animate, .menui.bottom-animate {
+	margin-top:0px;
+}
+.topnav li a span{float:right;font-size: 14px;}
+
+.topnav li ul li a{padding-left:20px;text-transform: none;}
+.topnav li ul li ul li a{padding-left:30px;}
+.topnav li ul li ul li ul li a{padding-left:40px;}
