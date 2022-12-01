@@ -1,7 +1,7 @@
 <? include('connect.php');
 $EVS_USERID = '026MUTUA3865'; // Your USPS Username
 $FromName = 'MUTUAL INDUSTRIES';
-$FromAddress1 = 'STE 1';
+$FromAddress1 = 'AVC';
 $FromAddress2 = '707 W GRANGE AVE';
 $FromCity = 'PHILADELPHIA';
 $FromState = 'PA';
@@ -15,10 +15,10 @@ $height=$_GET['height'];
 $shipping_to_zipcode = $_GET['zipcode'];
 class uspsxmlParser {
 
-var $params = array(); //Stores the object representation of XML data
+var $params = array(); //Stores SOME representation of XML data
 var $root = NULL;
 var $global_index = -1;
-var $fold = false;
+var $fold = TRUE;
 
 /* Constructor for the class
 * Takes in XML data as input( do not include the <xml> tag

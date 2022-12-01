@@ -3,7 +3,7 @@ include("connect.php");$SCHEMAA="Y";
 $TopTabb="Products";
 $urlname=addslashes(str_replace("_"," ",$_GET["id"]));
 $urlname=addslashes(str_replace("---"," ",$urlname));
-$get_temp="select * from flagging_searplusitems where urlsafename='".$urlname."'";
+$get_temp="select * from mutual_serplushitems where urlsafename='".$urlname."'";
 $gets=mysql_query($get_temp);
 if(mysql_affected_rows()>0)
 {
